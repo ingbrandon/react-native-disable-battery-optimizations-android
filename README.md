@@ -1,5 +1,7 @@
 # react-native-disable-battery-optimizations-android
 
+# 🔥🔥 Upgraded and merged some fixes from other forked repos 🔥🔥
+
 ## Getting started
 
 `$ npm install react-native-disable-battery-optimizations-android --save`
