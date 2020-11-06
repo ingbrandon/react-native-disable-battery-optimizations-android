@@ -5,6 +5,7 @@ import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
 import com.facebook.react.bridge.Promise;
 
+import android.widget.Toast;
 import android.content.Intent;
 import android.provider.Settings;
 import android.os.PowerManager;
