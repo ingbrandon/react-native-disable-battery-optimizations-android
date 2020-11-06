@@ -10,7 +10,7 @@ import android.provider.Settings;
 import android.os.PowerManager;
 import android.net.Uri;
 import android.os.Build;
-
+import android.content.ActivityNotFoundException;
 
 public class RNDisableBatteryOptimizationsModule extends ReactContextBaseJavaModule {
 
@@ -29,7 +29,21 @@ public class RNDisableBatteryOptimizationsModule extends ReactContextBaseJavaMod
 			intent.setAction(Settings.ACTION_REQUEST_IGNORE_BATTERY_OPTIMIZATIONS);
 			intent.setData(Uri.parse("package:" + packageName));
 			intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-			reactContext.startActivity(intent);
+			try {
+				reactContext.startActivity(intent);
+			} catch (ActivityNotFoundException e) {
+        Intent settingsIntent = new Intent();
+				settingsIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+				try {
+					settingsIntent.setAction(Settings.ACTION_IGNORE_BATTERY_OPTIMIZATION_SETTINGS);
+					reactContext.startActivity(settingsIntent);
+					Toast.makeText(reactContext, "Unable to open request. Please set application as Not Optimized.", Toast.LENGTH_LONG).show();
+				} catch (ActivityNotFoundException e2) {
+					settingsIntent.setAction(Settings.ACTION_SETTINGS);
+					reactContext.startActivity(settingsIntent);
+					Toast.makeText(reactContext, "Unable to open battery optimization settings. Please set application as Not Optimized in battery optimization settings.", Toast.LENGTH_LONG).show();
+				}
+			}
     
 	  }
 
