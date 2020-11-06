@@ -1,8 +1,10 @@
 # react-native-disable-battery-optimizations-android
 
+# 🔥🔥 Upgraded and merged some fixes from other forked repos 🔥🔥
+
 ## Getting started
 
-`$ npm install react-native-disable-battery-optimizations-android --save`
+`$ yarn add https://github.com/IronTony/react-native-disable-battery-optimizations-android`
 
 ### Mostly automatic installation for react native >= v 0.60
 Manual linking not required for above versions
