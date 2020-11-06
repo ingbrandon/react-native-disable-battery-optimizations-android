@@ -4,7 +4,7 @@
 
 ## Getting started
 
-`$ yarn add https://github.com/IronTony/react-native-disable-battery-optimizations-android --save`
+`$ yarn add https://github.com/IronTony/react-native-disable-battery-optimizations-android`
 
 ### Mostly automatic installation for react native >= v 0.60
 Manual linking not required for above versions
