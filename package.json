@@ -19,7 +19,7 @@
     "url": "git+https://github.com/ingbrandon/react-native-disable-battery-optimizations-android.git"
   },
   "author": "@brandonhenao",
-  "license": "ISC",
+  "license": "MIT",
   "peerDependencies": {
     "react-native": "^0.41.2"
   },
