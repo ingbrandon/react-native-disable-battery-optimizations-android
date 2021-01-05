@@ -1,4 +1,6 @@
 # react-native-disable-battery-optimizations-android
+The act of requesting **REQUEST_IGNORE_BATTERY_OPTIMIZATIONS** in the manifest is what may get you [banned](https://commonsware.com/blog/2015/11/11/google-anti-trust-issues.html), so it was remove.
+
 
 # 🔥🔥 Upgraded and merged some fixes from other forked repos 🔥🔥
 this is a fork of https://github.com/IronTony/react-native-disable-battery-optimizations-android.
