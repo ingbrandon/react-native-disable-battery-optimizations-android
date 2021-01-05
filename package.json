@@ -1,5 +1,5 @@
 {
-  "name": "@brandonhenao/react-native-disable-battery-optimizations-android",
+  "name": "react-native-disable-battery-optimizations-android",
   "version": "1.1.0",
   "description": "A react native library for checking battery optimization and whitelisting in Android",
   "main": "index.js",
@@ -18,8 +18,8 @@
     "type": "git",
     "url": "git+https://github.com/ingbrandon/react-native-disable-battery-optimizations-android"
   },
-  "author": "@rasheedk",
-  "license": "ISC",
+  "author": "@brandonhenao",
+  "license": "",
   "peerDependencies": {
     "react-native": "^0.41.2"
   },
