@@ -1,10 +1,13 @@
 # react-native-disable-battery-optimizations-android
 
 # 🔥🔥 Upgraded and merged some fixes from other forked repos 🔥🔥
+this is a fork of https://github.com/IronTony/react-native-disable-battery-optimizations-android.
 
 ## Getting started
 
-`$ yarn add https://github.com/IronTony/react-native-disable-battery-optimizations-android`
+`$ yarn add https://github.com/ingbrandon/react-native-disable-battery-optimizations-android`
+
+`$ npm i https://github.com/ingbrandon/react-native-disable-battery-optimizations-android`
 
 ### Mostly automatic installation for react native >= v 0.60
 Manual linking not required for above versions
@@ -46,13 +49,5 @@ RNDisableBatteryOptimizationsAndroid.isBatteryOptimizationEnabled().then((isEnab
 // Note: Play store will not allow using this method, and will allow only as an exception
 
 
-RNDisableBatteryOptimizationsAndroid.enableBackgroundServicesDialogue();
-
-Also 
-Add  this permission in your AndroidManifest.xml
-
-<uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS"/>
-
-
+RNDisableBatteryOptimizationsAndroid.enableBackgroundServicesDialogue();  
 ```
-  
